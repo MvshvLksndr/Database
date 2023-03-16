@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,5 +17,16 @@ namespace WPFDB.DB
         {
             optionsBuilder.UseSqlServer(connectionString);
         }
+        public DbSet<Student> Students { get; set; }
+    }
+
+    public class Student
+    {
+        [Key] //теперь это ключ
+        public int Id { get; set; } 
+        
+        public string Name { get; set; }
+
+        public string Group { get; set; }
     }
 }
