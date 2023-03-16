@@ -8,9 +8,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel>
-            <Label>Введите имя</Label>
+            <Label Margin="10">Введите имя</Label>
             <TextBox Name="tbName"></TextBox>
-            <Label>Введите группу</Label>
+            <Label Margin="10">Введите группу</Label>
             <TextBox Name="tbGroup"></TextBox>
             <Button Name="btnAdd" Click="btnAdd_Click">Добавить</Button>
         </StackPanel>
